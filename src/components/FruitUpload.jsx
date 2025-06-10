@@ -160,7 +160,7 @@ function FruitUpload() {
     
     <div className="relative min-h-screen w-screen bg-gradient-to-r from-green-200 via-white to-yellow-200 animate-gradient-x flex items-center justify-center p-8 overflow-hidden"
     style={{
-    backgroundImage: `url('./public/fruit-bg.jpg')`,
+    backgroundImage: `url('/images/fruit-bg.jpg')`,
   }}>
 
 
@@ -215,7 +215,7 @@ function FruitUpload() {
       {!result ? (
         <div className="text-center space-y-6">
           <img
-            src="./public/fruit-illustration.svg"
+            src="/images/fruit-illustration.svg"
             alt="Upload illustration"
             className="w-72 h-72 mx-auto opacity-95"
           />
