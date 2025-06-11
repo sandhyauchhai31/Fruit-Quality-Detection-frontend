@@ -44,8 +44,11 @@ function FruitUpload() {
     const formData = new FormData();
     formData.append("file", image);
 
+    const apiUrl = import.meta.env.VITE_APP_API_URL;
+
+
     try {
-      const res = await axios.post(VITE_APP_API_URL, formData, {
+      const res = await axios.post(apiUrl, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
