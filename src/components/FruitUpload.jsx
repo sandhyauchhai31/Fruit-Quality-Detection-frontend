@@ -45,7 +45,7 @@ function FruitUpload() {
     formData.append("file", image);
 
     try {
-      const res = await axios.post(REACT_APP_API_URL, formData, {
+      const res = await axios.post(VITE_APP_API_URL, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
