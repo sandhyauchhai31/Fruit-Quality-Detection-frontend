@@ -48,7 +48,7 @@ function FruitUpload() {
 
 
     try {
-      const res = await axios.post(apiUrl, formData, {
+      const res = await axios.post("https://fruit-quality-detection-backend-1.onrender.com/predict", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
