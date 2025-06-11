@@ -44,11 +44,8 @@ function FruitUpload() {
     const formData = new FormData();
     formData.append("file", image);
 
-    const apiUrl = import.meta.env.VITE_APP_API_URL;
-
-
     try {
-      const res = await axios.post("https://fruit-quality-detection-backend-1.onrender.com/predict", formData, {
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/predict`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
